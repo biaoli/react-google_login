@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { GoogleLogin, GoogleLogout } from 'react-google-login';
 import { gapi } from 'gapi-script';
 
-function App() {
+export default function App() {
     const [ profile, setProfile ] = useState([]);
     const clientId = '';//'386932037035-k8v833noqjk7m4auae0t83vnkrqvvg3t.apps.googleusercontent.com';
     useEffect(() => {
@@ -57,4 +57,3 @@ function App() {
         </div>
     );
 }
-export default App;
